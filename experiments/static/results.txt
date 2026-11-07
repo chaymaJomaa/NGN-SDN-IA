@@ -1,0 +1,24 @@
+Experiment B: Static Threshold Detection
+
+Controller: controller_static.py
+Detection method: Fixed threshold
+Threshold: 20 packets/second
+Confirmation: 2 consecutive intervals
+Blocking duration: 10 seconds
+
+Traffic: H3 -> H2
+Packets transmitted: 1000
+Packets received: 356
+Packets without reply: 644
+Packet loss: 64.4%
+Ping errors reported: 10
+Test duration: 26.709 seconds
+
+RTT min: 0.000 ms
+RTT avg: 15.714 ms
+RTT max: 1876.720 ms
+RTT mdev: 169.361 ms
+Ping pipe: 10
+
+Conclusion:
+Under high-frequency ICMP traffic, the static-threshold configuration resulted in 64.4% packet loss and an average RTT of 15.714 ms among received replies. Controller logs and OpenFlow flow-table observations are needed to attribute these effects definitively to the mitigation policy.

@@ -1,0 +1,19 @@
+Experiment A: Baseline (No AI)
+Controller: Ryu simple_switch_13
+
+Traffic: H3 -> H2
+Traffic type: High-frequency ICMP
+Packets transmitted: 1000
+Packets received: 1000
+Packets lost: 0
+Packet loss: 0%
+
+RTT min: 0.050 ms
+RTT avg: 0.075 ms
+RTT max: 1.113 ms
+RTT mdev: 0.037 ms
+
+Test duration: 22.440 seconds
+
+Conclusion:
+The SDN network successfully forwarded all ICMP packets without any mitigation mechanism. This experiment provides the baseline for comparison with static and AI-based network protection.

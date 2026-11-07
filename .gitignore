@@ -1,0 +1,29 @@
+cd ~/NGN-SDN-IA
+
+cat > .gitignore <<'EOF'
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Datasets and temporary files
+data/
+*.zip
+*.csv
+*.log
+
+# Models
+*.pkl
+*.joblib
+
+# Secrets
+kaggle.json
+.env
+.env.*
+*.pem
+*.key
+
+# Temporary files
+*.tmp
+EOF
